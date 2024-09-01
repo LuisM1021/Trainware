@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Trainware</title>
+    <script type="module" defer src="./index.js"></script>
+    <script defer src="./utils/navLogic.js"></script>
+</head>
+<body>
+    <nav id="nav" class="nav">
+        <div class="open-icon-container">
+            <span id="close-nav" class="header__open-nav-icon"></span>
+        </div>
+        <a href="/">Menú Principal</a>
+        <a href="/Products/">Productos</a>
+        <a href="/ShoppingCart/">Carrito de compras</a>
+        <a href="/Orders/">Órdenes</a>
+    </nav>
+    <header class="header">
+        <a class="home" href="/"></a>
+        <span id="open-nav" class="header__open-nav-icon"></span>
+        <h1 class="header__title">Trainware</h1>
+        <div class="header__right">
+            <a class="products" href="/Products/"></a>
+            <a class="cart" href="/ShoppingCart/"></a>
+            <a class="orders" href="/Orders/"></a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__impact">
+            <figure class="impact__img-container">
+                <img class="impact__img" src="./assets/images/prod1.jpg" alt="Playera trainware">
+            </figure>
+            <article class="impact__article">
+                <h2 class="impact__title">Entrena con comodidad</h2>
+                <p class="impact__text">Trainware es una tienda de calzado y 
+                    ropa deportiva ideal para que puedas 
+                    ejercitarte cómodamente gracias a los materiales de calidad que utilizamos. </p>
+                <a class="impact__button" href="/Products">Ver tienda</a>
+            </article>
+        </section>
+        <section class="main__why-us">
+            <h2 class="why-us__title">¿Por qué elegirnos?</h2>
+            <div class="why-us__left-arrow">
+                <p class="why-us__text">Calidad</p>
+                <span class="why-us__decoration-1-left"></span>
+                <span class="why-us__decoration-2-left"></span>
+            </div>
+            <div class="why-us__right-arrow">
+                <p class="why-us__text">Comodidad</p>
+                <span class="why-us__decoration-1-right"></span>
+                <span class="why-us__decoration-2-right"></span>
+            </div>
+            <div class="why-us__left-arrow">
+                <p class="why-us__text">Tecnología</p>
+                <span class="why-us__decoration-1-left"></span>
+                <span class="why-us__decoration-2-left"></span>
+            </div>
+        </section>
+        <section class="main__products">
+            <h2 class="products__title">Nuestros Productos</h2>
+            <div class="products__category-container">
+                <span id="leftArrow" class="products__left-arrow"></span>
+                <h3 id="category" class="products__category"></h3>
+                <span id="rightArrow" class="products__right-arrow"></span>
+            </div>
+            <div id="products" class="products__container">
+
+            </div>
+            <a class="products__button" href="/Products">Ver tienda</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3 class="footer__title">Hecho por: </h3>
+        <p class="footer__author">Luis Muralles <br>0900-20-564</p>
+    </footer>
+</body>
+</html>
