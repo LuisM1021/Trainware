@@ -300,6 +300,9 @@ nav span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    &.checked{
+        background-image: url('../assets/icons/check-circle.svg');
+    }
 }
 .footer{
     margin-top: 50px;

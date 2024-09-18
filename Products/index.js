@@ -48,9 +48,14 @@ class Product{
         p.textContent = `Q${this.price.toFixed(2)}`;
         const button = document.createElement('span');
         button.classList.add('product__add-to-cart');
+        const findInCart = cartProducts.find(item => item.id === this.id)
+        if(findInCart){
+            button.classList.add('checked')
+        }
         button.addEventListener('click', (e) =>{
             e.stopPropagation();
             addToCart(this)
+            button.classList.add('checked')
         })
         article.append(figure);
         article.append(h2);
